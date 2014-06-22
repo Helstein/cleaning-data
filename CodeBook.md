@@ -1,6 +1,6 @@
 Code Book for the tidy dataset
 =============
-# Observations and Variables
+## Observations and Variables
 The script produces a file "tidy.csv" that represents dataset with four columns, where each row represents mean of all the values in the original dataset for a combination of subject, activity and variable. This is a tall and skinny dataset with 11880 rows ('number of subjects' x 'number of activities' x 'number of std or mean features' = 30x6x66 = 11880) and four columns:
 * subject - An identifier of the subject who carried out the experiment. Type: factor ("1", "2", ..., "30")
 * activity - Activity label. Type: factor ("WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")
@@ -8,7 +8,7 @@ The script produces a file "tidy.csv" that represents dataset with four columns,
 * mean - Mean of all the values for given subject, activity and variable in the original dataset. Type: numeric
 
 
-# Steps Performed by the Script
+## Steps Performed by the Script
 1. Features file ("features.txt") is parsed into a table with two columns: integer index of the feature and transformed name of the feature. Only the features that represent std or mean measures are included (ones that contain "-std()" or "-mean()" in their names). The name is transformed such that they contain the following parts, in order:
 	* "mean" or "std" depending on the original value name
 	* name of the variable without the "t" or "f" prefix (e.g. "tBodyAcc-std()-Z" -> "BodyAcc")
