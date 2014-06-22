@@ -5,5 +5,5 @@ This repository contains files for course project of "Getting and Cleaning Data"
 
 # How to Run
 1. Clone this repository to your computer
-2. Extract the original dataset to the directory where script "run_analysis.R" is located (or modify the "datasetBase" variable within the file to point to the base directory of the dataset)
+2. Extract the original dataset to the directory where script "run_analysis.R" is located (or modify the "datasetBase" variable within the script to point to the base directory of the dataset)
 3. Run "run_analysis.R"
